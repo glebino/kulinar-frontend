@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Button, styled, Typography } from "@mui/material";
 import { Link } from 'react-router-dom'
 //img
-import headerImg from '../assets/yasha.jpg'
+// import headerImg from '../assets/yasha.jpg'
 
 const Header = () => {
 
@@ -12,9 +12,9 @@ const Header = () => {
         justifyContent: 'center',
         // tamanhos
         gap: theme.spacing(2),
-        paddingTop: theme.spacing(10),
+        paddingTop: theme.spacing(20),
         // cor de fundo
-        backgroundColor: 'orange',
+        backgroundColor: 'grey',
         [theme.breakpoints.down('md')]: {
             flexDirection: 'column',
             alignItems: 'center',
@@ -40,17 +40,38 @@ const Header = () => {
             <BoxText 
             component='section'
             >
+                {/* <Typography
+                variant='h2'
+                component= 'h1'
+                sx={{
+                    // position: 'absolute',
+                    fontWeight: 700,
+                    // color: '#fff',
+                    color: '#000000',
+                    width: 554
+                }}
+                >
+                    ЗВАНЫЙ УЖИН 
+                </Typography> */}
+
                 <Typography
                 variant='h2'
                 component= 'h1'
                 sx={{
+                    // position: 'absolute',
                     fontWeight: 700,
-                    color: '#fff',
+                    // color: '#fff',
+                    color: '#000000',
+                    width: 554,
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    whiteSpace: 'nowrap',
                 }}
                 >
-                    ЗВАНЫЙ УЖИН         У ЯШКИ
+                <span style={{ marginRight: '400px' }}>ЗВАНЫЙ УЖИН</span>
+                <span style={{ marginLeft: '400px' }}> У ЯШКИ</span>
                 </Typography>
-
+                
                 <Typography
                 variant='p'
                 component='p'
@@ -84,7 +105,7 @@ const Header = () => {
                         }
                     }}
                     >
-                        buy now
+                        купуем
                     </Button>
                     <Button 
                     component={Link} 
@@ -109,7 +130,7 @@ const Header = () => {
                         }
                     }}
                     >
-                        explore
+                        за всю эту хурму
                     </Button>
                 </Box>
             </BoxText>
@@ -126,14 +147,14 @@ const Header = () => {
                 },
             })}
             >
-                <img
+                {/* <img
                 src={headerImg}
                 alt="headerImg"
                 style={{ 
                     width: "100%", 
                     marginBottom: -15,
                 }}
-                />
+                /> */}
             </Box>
 
         </CustomBox>
