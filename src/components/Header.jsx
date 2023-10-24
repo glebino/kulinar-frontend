@@ -14,7 +14,7 @@ const Header = () => {
         gap: theme.spacing(2),
         paddingTop: theme.spacing(20),
         // cor de fundo
-        backgroundColor: 'grey',
+        backgroundColor: '#E0FF9E',
         [theme.breakpoints.down('md')]: {
             flexDirection: 'column',
             alignItems: 'center',
@@ -86,6 +86,8 @@ const Header = () => {
 
                 <Box>
                     <Button 
+                    component={Link} 
+                    to={'/about'}
                     variant='contained'
                     sx={{
                         mr: 2,
@@ -93,21 +95,21 @@ const Header = () => {
                         py: 1,
                         fontSize: '0.9rem',
                         textTransform: 'capitalize',
-                        borderRadius: 0,
-                        borderColor: '#14192d',
+                        borderRadius: 5,
+                        borderColor: '#FF71D7',
                         color: '#fff',
-                        backgroundColor: '#14192d',
+                        backgroundColor: '#FD8DDC',
                         "&&:hover": {
-                            backgroundColor: "#343a55"
+                            backgroundColor: "#C0D731"
                         },
                         "&&:focus": {
-                            backgroundColor: "#343a55"
+                            backgroundColor: "#398EF5"
                         }
                     }}
                     >
                         купуем
                     </Button>
-                    <Button 
+                    {/* <Button 
                     component={Link} 
                     to={'/about'}
                     variant='outlined'
@@ -131,7 +133,7 @@ const Header = () => {
                     }}
                     >
                         за всю эту хурму
-                    </Button>
+                    </Button> */}
                 </Box>
             </BoxText>
 
