@@ -19,8 +19,8 @@ const Paragraph = ({ position, width, text, maxWidth, mx, textAlign }) => {
       color: '#000000',
       fontSize:'46px',
       fontWeight: '400',
-
-      fontFamily: 'Work Sans'
+      fontFamily: 'Work Sans',
+      font: 'Work Sans Bold'
       // font-family: 'Work Sans'
     }}
     >
