@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
 
     const CustomBox = styled(Box) (({ theme }) => ({
-        minHeight: '80vh',
+        minHeight: '30vh',
         display: 'flex',
         justifyContent: 'center',
         // tamanhos
@@ -40,20 +40,6 @@ const Header = () => {
             <BoxText 
             component='section'
             >
-                {/* <Typography
-                variant='h2'
-                component= 'h1'
-                sx={{
-                    // position: 'absolute',
-                    fontWeight: 700,
-                    // color: '#fff',
-                    color: '#000000',
-                    width: 554
-                }}
-                >
-                    ЗВАНЫЙ УЖИН 
-                </Typography> */}
-
                 <Typography
                 variant='h2'
                 component= 'h1'
@@ -62,6 +48,7 @@ const Header = () => {
                     fontWeight: 700,
                     // color: '#fff',
                     color: '#000000',
+                    height: 1,
                     width: 554,
                     display: 'flex',
                     justifyContent: 'space-between',
@@ -90,9 +77,9 @@ const Header = () => {
                     to={'/about'}
                     variant='contained'
                     sx={{
-                        mr: 2,
-                        px: 4, 
-                        py: 1,
+                        ml: 112,
+                        px: 40, 
+                        py: 4,
                         fontSize: '0.9rem',
                         textTransform: 'capitalize',
                         borderRadius: 5,
@@ -107,33 +94,8 @@ const Header = () => {
                         }
                     }}
                     >
-                        купуем
+                        Хочу на ужин
                     </Button>
-                    {/* <Button 
-                    component={Link} 
-                    to={'/about'}
-                    variant='outlined'
-                    sx={{
-                        px: 4, 
-                        py: 1,
-                        fontSize:'0.9rem',
-                        textTransform: 'capitalize',
-                        borderRadius: 0,
-                        color: '#fff',
-                        backgroundColor: 'transparent',
-                        borderColor: '#fff',
-                        "&&:hover": {
-                            color: '#343a55',
-                            borderColor: '#343a55',
-                        },
-                        "&&:focus": {
-                            color: '#343a55',
-                            borderColor: '#343a55',
-                        }
-                    }}
-                    >
-                        за всю эту хурму
-                    </Button> */}
                 </Box>
             </BoxText>
 

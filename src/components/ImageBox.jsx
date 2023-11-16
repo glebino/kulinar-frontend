@@ -3,7 +3,7 @@ import { ImageList, ImageListItem } from "@mui/material";
 import cakeImg from '../gallery/cake.jpg'
 import danImg from '../gallery/dan.jpg'
 import buterImg from '../gallery/buter.jpg'
-import kolacici from '../gallery/buter.jpg'
+import kolacici from '../gallery/kolacici.jpg'
 
 const itemData = [
     {
