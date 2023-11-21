@@ -55,8 +55,8 @@ const Header = () => {
                     whiteSpace: 'nowrap',
                 }}
                 >
-                <span style={{ marginRight: '400px' }}>ЗВАНЫЙ УЖИН</span>
-                <span style={{ marginLeft: '400px' }}> У ЯШКИ</span>
+                <span style={{ marginRight: '10px', zIndex: 2 }}>ЗВАНЫЙ УЖИН</span>
+                <span style={{ marginRight: '1000px', zIndex: 1 }}> У ЯШКИ</span>
                 </Typography>
                 
                 <Typography
@@ -77,11 +77,17 @@ const Header = () => {
                     to={'/about'}
                     variant='contained'
                     sx={{
-                        ml: 112,
-                        px: 40, 
+                        ml: 117,
+                        px: 20, 
                         py: 4,
-                        fontSize: '0.9rem',
-                        textTransform: 'capitalize',
+                        fontSize: '2.0rem',
+                        whiteSpace: 'nowrap',
+                        "&&:first-letter": {
+                            textTransform: 'uppercase', // Capitalize the first letter of the first word
+                        },
+                        // textTransform: 'capitalize',
+                        // textTransform: 'lowercase',
+                        textTransform: 'none',
                         borderRadius: 5,
                         borderColor: '#FF71D7',
                         color: '#fff',
@@ -91,7 +97,7 @@ const Header = () => {
                         },
                         "&&:focus": {
                             backgroundColor: "#398EF5"
-                        }
+                        },
                     }}
                     >
                         Хочу на ужин

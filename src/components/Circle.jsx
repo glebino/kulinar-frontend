@@ -13,6 +13,7 @@ const Circle = () => {
         left: 572,
         top: 40,
         borderRadius: '50%',
+        zIndex: 0, // Default zIndex is 0
     }}
     >
       <img src={yashaImg} alt={yashaImg} />

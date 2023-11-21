@@ -2,7 +2,7 @@ import React from "react";
 import Paragraph from "../components/Paragraph";
 import Header from "../components/Header";
 import Circle from "../components/Circle";
-import ImageBox from "../components/ImageBox";
+// import ImageBox from "../components/ImageBox";
 
 
 const Home = () => {
